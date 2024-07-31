@@ -3,6 +3,7 @@ import cors from "cors"
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from 'dotenv'
+import recipeRoutes from './routes/recipeRoutes.js'
 
 dotenv.config();
 
@@ -18,8 +19,10 @@ app.get('/', (req, res) => {
 })
 // Comeback and add routes
 
+
 mongoose.connect(ATLAS_URI)
     .then(() => console.log('MONGODB CONNECTED'))
     .catch(err => console.log(err))
 
+app.use('/recipes', recipeRoutes)
 app.listen(PORT, () => console.log( `server connected on PORT: ${PORT}`))
