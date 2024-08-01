@@ -57,8 +57,7 @@ router.delete('/:id', async(req, res) => {
         } catch (error) {
             console.log(error)
             res.status(500).send({message: `ERROR OCCURED ${error}`})
-        }
-        
+        }  
 })
 
 export default router;
