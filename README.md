@@ -11,7 +11,7 @@
 ## Instructions
 Once forked and cloned
 - go into project and run npm install, to download dependencies
-- create a .env file in the root of your backend folder and add a variable for your PORT and -ATLAS_URI label them as such. (Please add your own ATLAS_URI from mongoDB make sure to put correct credentials <sub>mongodb+srv://mongodb+srv://<username>:<password>@<cluster-name>.tgceqjb.mongodb.net/<collection name>?retryWrites=true&w=majority&appName=<Cluster Name></sub>)
+- create a .env file in the root of your backend folder and add a variable for your PORT and -ATLAS_URI label them as such. (Please add your own ATLAS_URI from mongoDB make sure to put correct credentials <sub>mongodb+srv://mongodb+srv://(username):(password)@(cluster-name).tgceqjb.mongodb.net/(collection name)?retryWrites=true&w=majority&appName=(Cluster Name)</sub>)
 - run npm run dev in your backend to start serve
 - run npm run dev in frontend to start react project
 
