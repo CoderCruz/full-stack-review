@@ -46,17 +46,19 @@ const CreateRecipe = () => {
     postRecipeData(newRecipeData).then(() => {
       setLoading(false)
       navigate('/');
-      // window.location.reload();
+      window.location.reload();
     })
   }
 
   return (
     <div>
+      {loading? <Spinner/> 
+      :
       <Form 
         title={'Create new recipe'}
         handleChange={handleChange}
         handleCreateRecipe={handleCreateRecipe}
-      />
+      />}
     </div>
   )
 }

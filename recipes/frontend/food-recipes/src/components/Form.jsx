@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Form = ({ title, handleChange, handleCreateRecipe }) => {
+const Form = ({ title, handleChange, handleCreateRecipe, handleUpdateRecipe }) => {
   return (
     <div>
       <form className="mt-16">

@@ -19,7 +19,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="">
+    <div className="flex flex-row flex-wrap gap-6 mt-20 w-5/6 columns-4">
     {
   
       loading ? <Spinner /> 
